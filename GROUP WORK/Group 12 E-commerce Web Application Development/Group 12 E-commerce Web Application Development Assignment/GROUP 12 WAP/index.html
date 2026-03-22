@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DUNAMIS BABY STORE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar with cart count (DOM updated by JS) --->
+    <nav class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+        <div id="cartCount">Cart (0)</div>
+    </nav>
+    <main>
+        
+    <h1>Everything for your little one</h1>
+
+    <!-- Search bar (JS event listener attached dynamically) -->
+    <input type="text" id="search" placeholder="Search products by name...">
+
+    <!-- Filter buttons (onclick events) -->
+    <div>
+        <button class="filter-btn" onclick="filterProducts('All')">All</button>
+        <button class="filter-btn" onclick="filterProducts('TOYS')">TOYS</button>
+        <button class="filter-btn" onclick="filterProducts('FASHION')">FASHION</button>
+        <button class="filter-btn" onclick="filterProducts('BATH')">BATH</button>
+    </div>
+
+    <!-- Dynamic product list (populated by JS DOM manipulation) -->
+    <div id="productList"></div>
+
+    </main>
+    <script src="javascript/script.js"></script>
+    <footer>
+        <p>
+            Made with &hearts; in Uganda  | &copy;2026  DUNAMIS BABY STORE
+        </p>
+        <P>Made with Vanilla JS</P>
+
+    </footer>
+</body>
+</html>
+

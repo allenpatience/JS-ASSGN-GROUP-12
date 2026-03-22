@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - DUNAMIS BABY STORE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </div>
+        <div id="cartCount">Cart (0)</div>
+    </nav>
+
+    <main>
+         <h1>Checkout</h1>
+    <p>Back to <a href="cart.html">Cart</a></p>
+
+    <!-- Checkout form with JS validation (onsubmit, DOM getElementById) -->
+    <form onsubmit="return validateCheckout()">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="your@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" placeholder="+256 *********" required>
+
+        <label for="address">Delivery Address:</label>
+        <textarea id="address" placeholder="Enter delivery address" required></textarea>
+
+        <br>
+        <button type="submit">Place Order</button>
+    </form>
+    </main>
+
+    <script src="javascript/script.js"></script>
+    <footer> 
+        <p>Your baby's comfort is our delight &hearts; 
+        <p>Contact Us on +256 700 444 324</p>
+        <p>Made with Vanilla JS</p>
+    </p></footer>
+</body>
+</html>
+
