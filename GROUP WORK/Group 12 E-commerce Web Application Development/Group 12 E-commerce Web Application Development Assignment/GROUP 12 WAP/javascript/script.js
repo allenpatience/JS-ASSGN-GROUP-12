@@ -21,7 +21,7 @@ function loadCart() {
         const saved = localStorage.getItem("cart");
         if (saved) {
             cart = JSON.parse(saved);
-            // Validate cart structure
+            // Validating cart structure
             if (!Array.isArray(cart) || !cart.every(item => item && typeof item.id !== 'undefined' && (item.qty || 0) > 0)) {
                 console.warn("Invalid cart data, resetting to empty");
                 cart = [];
@@ -174,7 +174,7 @@ function removeItem(id) {
     displayCart();
 }
 
-// Checkout validation (comprehensive with try-catch)
+// checking validation with try-catch
 function validateCheckout() {
     try {
         const name = document.getElementById("name")?.value.trim();
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.getElementById("cartItems")) {
         displayCart();
     }
-    // Ensure count updated even if no products/cart
+    // cart update even when no products are selexted
     updateCartCount();
 });
 
