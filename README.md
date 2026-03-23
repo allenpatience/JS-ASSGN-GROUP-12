@@ -3,7 +3,7 @@ A simple E-Commerce website that sells Baby accessories. Most of the content is 
 
 GROUP MEMBERS INCLUDE;
 Ainembabazi Winnie
-Mukaaga Kevin Wanyama
+Mukaga Kevin Wanyama
 Ishimwe Patience Allen
 Mutesi Susan
 Ainebyoona Mary Bridget
