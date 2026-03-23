@@ -193,13 +193,13 @@ function validateCheckout() {
             throw new Error("Invalid email format.");
         }
 
-        // Phone validation (digits, min 10)
+        // Phone validation -with minimum of 10
         const phoneRegex = /^\d{10,}$/;
         if (!phoneRegex.test(phone)) {
             throw new Error("Invalid phone number (at least 10 digits).");
         }
 
-        // Empty cart check
+        // checking empty cart
         loadCart(); // Ensure latest
         if (cart.length === 0) {
             throw new Error("Cart is empty. Add items before checkout.");
